@@ -1,0 +1,7 @@
+castraveti	10.0
+rosii	90.0
+paine	20.0
+oua	10.0
+branza	30.0
+ceapa	40.0
+cartofi	50.0

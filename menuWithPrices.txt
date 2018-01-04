@@ -1,0 +1,7 @@
+castraveti	10.0
+rosii	6.0
+paine	3.0
+oua	2.0
+branza	6.0
+ceapa	4.0
+cartofi	3.0
