@@ -10,7 +10,7 @@ public class InsertionSort {
 
             for (i=j-1; (i>=0) && (num[i] > key); i--) //will run as long as i>=0
             { // if index 0 => 30 is > index 1(key) => 2 then
-                num[i+1] = num[i];   //smaller values are moving up
+                num[i+1] = num[i];   //smaller values are moving to left
             }
 
             num[i+1] = key; //put the key in its location -- switch the numbers

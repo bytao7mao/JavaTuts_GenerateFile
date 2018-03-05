@@ -4,15 +4,25 @@ import java.io.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+import static com.company.LinearSearchClass.searchFor;
+import static com.company.SelectionSort.selectionSort;
+
 public class Main {
+    public static int add(int a, int b){
+        return a + b;
+    }
+
+
 
     public static void main(String[] args) {
 
+        add(3,4);
         //generator of a random array
         int[] randomArray = new int[5]; //length of the array = 5
         Random rand = new Random(); //initializer
@@ -21,10 +31,9 @@ public class Main {
         }
         System.out.println(Arrays.toString(randomArray)); //prints the array
 
-       // LinearSearchClass.searchFor(randomArray); //the method created by me !! LOL
+        LinearSearchClass.searchFor(randomArray); //the method created by me !! LOL
 
-       // SelectionSortDerekBanas.srt(randomArray);
-      //  System.out.println(Arrays.toString(randomArray));
+
 
 
 
@@ -73,21 +82,21 @@ public class Main {
 
 
         // create any file customers.txt
-        Scanner sc = new Scanner(System.in);
-        File output = new File("C:\\Users\\Mariu\\Desktop\\Linkedin\\Sorting\\src\\com\\company\\fisierulluidani.txt");
-        String name;
-        System.out.println("Enter customer name: ");
-        name = sc.nextLine();
-        try {
-            PrintWriter out = new PrintWriter(output);  //create file
-            while(name.equalsIgnoreCase("done") == false){
-                out.println(name);
-                System.out.println("Enter the next name or \"done\" to exit");
-                name = sc.nextLine();
-            }
-            out.close();
-        }catch (Exception e){
-            System.out.println("error occured " + e.toString());
-        }
+//        Scanner sc = new Scanner(System.in);
+//        File output = new File("C:\\Users\\Mariu\\Desktop\\Linkedin\\Sorting\\src\\com\\company\\fisierulluidani.txt");
+//        String name;
+//        System.out.println("Enter customer name: ");
+//        name = sc.nextLine(); //prints output
+//        try {
+//            PrintWriter out = new PrintWriter(output);  //create file
+//            while(!name.equalsIgnoreCase("done")){
+//                out.println(name);
+//                System.out.println("Enter the next name or \"done\" to exit");
+//                name = sc.nextLine();
+//            }
+//            out.close();
+//        }catch (Exception e){
+//            System.out.println("error occured " + e.toString());
+//        }
     } //end of public static void main(String[] args)
 }

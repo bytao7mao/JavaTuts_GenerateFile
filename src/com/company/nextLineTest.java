@@ -12,7 +12,7 @@ public class nextLineTest {
         // print the next line
         System.out.println("print the next line" + scanner.nextLine());
 
-        // check if there is a next line again
+        // returns boolean
         System.out.println("check if there is a next line again" + scanner.hasNextLine());
 
         // print the next line
