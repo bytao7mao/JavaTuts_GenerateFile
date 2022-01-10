@@ -14,15 +14,9 @@ public static void method() {
         int x = i;
         int j = x;
 
-            while (j == x) {
-                r += "+";
-                j--;
-            }
-        
-
-            for (j = x + 1; j < n + 1; j++) {
-                r += j - x;
-            }
+        for (j = x + 1; j < n + 1; j++) {
+            r += j - x;
+        }
 
         System.out.println(r);
         }
